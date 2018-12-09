@@ -1,5 +1,15 @@
 ## Web后端
 
+### 启动项目
+- 创建项目
+`django-admin startproject <project_name>`
+- 创建app
+`cd <project_name>`
+`python manage.py startapp <app_name>`
+- 启动服务器
+`python manage.py runserver 0.0.0.0:8080`
+
+
 
 ### 问题解决
 - [linux对外开放端口](http://www.cnblogs.com/blog-yuesheng521/p/7198829.html)
@@ -31,7 +41,7 @@ INSTALLED_APPS = [
 - [自强学堂Django基础教程](https://code.ziqiangxuetang.com/django/django-cms-develop.html)
 
 
-model.py
+- 编写model.py
 ```python
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
@@ -74,7 +84,7 @@ class Article(models.Model):
         verbose_name = '教程'
         verbose_name_plural = '教程'
 ```
-
+- 创建数据库
 ```
 (py36) root@sp:~/pku-ssm-2019/ecs-backend/crust# python manage.py makemigrations news
 Migrations for 'news':
