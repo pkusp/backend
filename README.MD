@@ -2,11 +2,14 @@
 
 ### 启动项目
 - 创建项目
+
 `django-admin startproject <project_name>`
 - 创建app
-`cd <project_name>`
+
+`cd <project_name>`  
 `python manage.py startapp <app_name>`
 - 启动服务器
+
 `python manage.py runserver 0.0.0.0:8080`
 
 
@@ -17,7 +20,7 @@
 - [外网无法访问解决](https://www.cnblogs.com/sunjor/p/4887961.html)
 - [django+ecs举例](https://blog.csdn.net/dieson1027/article/details/78750794)
 
-
+- [ECS无法访问1](https://www.v2ex.com/t/509652)
 ### 设置
 
 - 添加app
@@ -38,6 +41,9 @@ INSTALLED_APPS = [
 
 ### 教程
 
+- [linux curl命令](http://www.cnblogs.com/duhuo/p/5695256.html)
+
+在Linux中curl是一个利用URL规则在命令行下工作的文件传输工具，可以说是一款很强大的http命令行工具。它支持文件的上传和下载，是综合传输工具，但按传统，习惯称url为下载工具。
 - [自强学堂Django基础教程](https://code.ziqiangxuetang.com/django/django-cms-develop.html)
 
 
