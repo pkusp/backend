@@ -1,4 +1,8 @@
 ## Web后端
+- 重要提醒`2019.01.15`:  
+阿里云ECS服务器无法连接问题，踩了一堆坑发现只要做两件事情：
+1. 开放服务器的防火墙（我的是Ubuntu）：`sudo iptables -I INPUT -p tcp --dport <port number> -j ACCEPT`
+2. 打开阿里云的控制台，在安全组规则添加开放的端口号：`<port number>`
 
 ### 启动项目
 - 创建项目
@@ -14,15 +18,7 @@
 
 
 
-### 问题解决记录
-- [内网穿透（使内网服务器公网可访问）](https://github.com/Wisdom-Projects/holer)
-Holer是一个将局域网中的应用映射到公网访问的端口映射软件，支持转发基于TCP协议的报文。
-- [linux对外开放端口](http://www.cnblogs.com/blog-yuesheng521/p/7198829.html)
-- [使Django外网可访问](https://blog.csdn.net/luojie140/article/details/76708797)
-- [外网无法访问解决](https://www.cnblogs.com/sunjor/p/4887961.html)
-- [django+ecs举例](https://blog.csdn.net/dieson1027/article/details/78750794)
 
-- [ECS无法访问1](https://www.v2ex.com/t/509652)
 ### 设置
 
 - 添加app
@@ -104,3 +100,12 @@ Migrations for 'news':
 ### 其他
 - [Tomcat快速入门](https://www.cnblogs.com/jingmoxukong/p/8258837.html?utm_source=gold_browser_extension)
 
+### 问题解决记录(最终解决方案参见首行：重要提醒)
+- [内网穿透（使内网服务器公网可访问）](https://github.com/Wisdom-Projects/holer)
+Holer是一个将局域网中的应用映射到公网访问的端口映射软件，支持转发基于TCP协议的报文。
+- [linux对外开放端口](http://www.cnblogs.com/blog-yuesheng521/p/7198829.html)
+- [使Django外网可访问](https://blog.csdn.net/luojie140/article/details/76708797)
+- [外网无法访问解决](https://www.cnblogs.com/sunjor/p/4887961.html)
+- [django+ecs举例](https://blog.csdn.net/dieson1027/article/details/78750794)
+
+- [ECS无法访问1](https://www.v2ex.com/t/509652)
